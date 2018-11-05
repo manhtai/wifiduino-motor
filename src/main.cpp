@@ -1,13 +1,13 @@
-#if !defined(AUTH)
-  #define AUTH ""
+#if !defined(MY_AUTH)
+  #define MY_AUTH ""
 #endif
 
-#if !defined(SSID)
-  #define SSID ""
+#if !defined(MY_SSID)
+  #define MY_SSID ""
 #endif
 
-#if !defined(PASS)
-  #define PASS ""
+#if !defined(MY_PASS)
+  #define MY_PASS ""
 #endif
 
 #define BLYNK_PRINT Serial
@@ -18,7 +18,7 @@
 void setup()
 {
   Serial.begin(9600);
-  Blynk.begin(AUTH, SSID, PASS);
+  Blynk.begin(MY_AUTH, MY_SSID, MY_PASS);
 }
 
 void loop()
